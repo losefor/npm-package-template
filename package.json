@@ -7,7 +7,9 @@
     "build": "npm run clean && tsc",
     "check-types": "tsc",
     "clean": "rimraf dist",
-    "full-clean": "rimraf dist && rimraf node_modules"
+    "full-clean": "rimraf dist && rimraf node_modules",
+    "lint": "eslint .",
+    "lint-fix": "npm run lint --fix"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
